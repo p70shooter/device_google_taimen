@@ -1,4 +1,4 @@
-# Copyright (C) 2017 AquariOS
+# Copyright (C) 2018 Unholy
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Include aquarios phone config
-include vendor/aquarios/configs/aquarios_phone.mk
+# Inherit some common Unholy stuff.
+$(call inherit-product, vendor/unholy/configs/common_full_phone.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
